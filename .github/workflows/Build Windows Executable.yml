@@ -28,7 +28,6 @@ jobs:
       - name: Build with PyInstaller
         run: |
           pyinstaller --noconfirm --onefile --clean ^
-            --name dlt_analysis ^
             --add-data "styles.tcss;." ^
             --add-data "docs/*;docs" ^
             app.py
