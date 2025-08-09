@@ -1,0 +1,156 @@
+
+/* --------------- home 页面 --------------- */
+#home {
+    padding: 1;
+    overflow-y: auto;
+}
+
+#home_intro, #home_datasource, #home_algorithm {
+    border: round $primary;
+    padding: 1 2;
+    background: $surface;
+    color: $text;
+    margin-bottom: 1;
+}
+
+
+/* --------------- data 页面 --------------- */
+#data_main_vertical {
+  layout: vertical;
+  padding: 1;
+  height: 100%;
+}
+
+#data_top_bar {
+  height: auto;
+  layout: horizontal;
+  padding: 1 2;
+}
+
+#data_top_bar #start_input,#data_top_bar #end_input {
+    width: 30;
+}
+
+#data_top_bar #search_btn,
+#data_top_bar #search_30_btn,
+#data_top_bar #search_50_btn,
+#data_top_bar #search_100_btn,
+#data_top_bar #save_btn,
+#data_top_bar #network_btn {
+  width: 15;
+  margin-right: 1;
+}
+
+#data_top_bar #label_pre,#data_top_bar #label_mid {
+    height: 3;
+    content-align: center middle;
+    text-style: bold;   
+}
+
+#data_content #data_content_left{
+    width:15%;
+    padding: 0;
+}
+#data_content #data_content_left #left_list_title {
+    width:100%;
+    height: 3;
+    content-align: center middle;
+    text-style: bold; 
+    border: round $primary;
+}
+#data_content #data_content_left #left_list_tip {
+    width:100%;
+    height: 3;
+    content-align: center middle;
+    text-style: bold; 
+    border: round $primary;
+}
+
+#data_content #data_content_left #left_list {
+    width:100%;
+    border: round $primary;
+    height: 1fr;
+}
+
+#data_content #data_content_right{
+    width:85%;
+    padding: 0;
+    height: 1fr;
+    overflow-y: auto;
+}
+#data_content #data_content_right #right_table_title{
+    width:100%;
+    height: 3;
+    content-align: center middle;
+    text-style: bold; 
+    border: round $primary;
+}
+
+#data_content #data_content_right #right_table{
+    width:100%;
+    height: 1fr;
+    border: round $primary;
+    overflow-y: auto;
+}
+
+/* --------------- analysis 页面 --------------- */
+
+#analysis_container {
+    padding: 1;
+    height: 100%;
+    layout: horizontal;
+}
+
+#analysis_container #right_form {
+    width: 30%;
+    height: 1fr;
+    margin:0;
+    padding:0;
+} 
+
+#analysis_container #right_form #right_form_title{
+    width:100%;
+    height: 3;
+    content-align: center middle;
+    text-style: bold; 
+    border: round $primary;
+}
+#analysis_container #right_form #model_config,
+#analysis_container #right_form #model,
+#analysis_container #right_form #btn_group
+{
+    width:100%;
+    height:3;
+}
+
+#analysis_container #right_form #model_config #lookback_periods,
+#analysis_container #right_form #model_config #test_size,
+#analysis_container #right_form #model #model_type,
+#analysis_container #right_form #model #feature_engineering
+{
+    width:50%;
+}
+
+#analysis_container #right_form #btn_group #exec_btn,
+#analysis_container #right_form #btn_group #default_btn
+{
+    width:50%;
+    height: 3;
+    padding:0;
+    margin:0 1;
+    content-align: center middle;
+    text-style: bold;
+}
+
+
+#analysis_container #left_preview {
+    width: 70%;
+    height: 1fr;
+    border: none;
+    background: transparent;
+    border: round $primary;
+    scrollbar-size-vertical: 0;
+    scrollbar-size-horizontal: 0;
+    margin:0;
+    padding:1;
+}
